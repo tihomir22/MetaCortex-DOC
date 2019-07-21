@@ -1,20 +1,24 @@
 swagger: '2.0'
 info:
-  description: Api Documentation
-  version: '1.0'
-  title: Api Documentation
-  termsOfService: 'urn:tos'
-  contact: {}
+  description: >-
+    Live data , historic records and technical indicators for the crypto
+    industry.
+  version: 1.0.0
+  title: Metacortex API
+  contact:
+    name: Tihomir Stoychev Stoychev
+    url: 'http://github.com/tihomir22/'
+    email: tihomir_alcudia3@hotmail.com
   license:
     name: Apache 2.0
-    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 host: 'localhost:8956'
 basePath: /
 tags:
   - name: price-controller
     description: Price Controller
 paths:
-  /historic/**:
+  /historic:
     get:
       tags:
         - price-controller
@@ -51,7 +55,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /price/**:
+  /price:
     get:
       tags:
         - price-controller
@@ -83,7 +87,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/dema/**:
+  /technical/dema:
     get:
       tags:
         - price-controller
@@ -136,7 +140,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/ema/**:
+  /technical/ema:
     get:
       tags:
         - price-controller
@@ -189,7 +193,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/kama/**:
+  /technical/kama:
     get:
       tags:
         - price-controller
@@ -242,7 +246,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/mama/**:
+  /technical/mama:
     get:
       tags:
         - price-controller
@@ -295,7 +299,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/rsi/**:
+  /technical/rsi:
     get:
       tags:
         - price-controller
@@ -348,7 +352,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/sma/**:
+  /technical/sma:
     get:
       tags:
         - price-controller
@@ -401,7 +405,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/t3/**:
+  /technical/t3:
     get:
       tags:
         - price-controller
@@ -454,7 +458,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/tema/**:
+  /technical/tema:
     get:
       tags:
         - price-controller
@@ -507,7 +511,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/tma/**:
+  /technical/tma:
     get:
       tags:
         - price-controller
@@ -560,7 +564,7 @@ paths:
         '404':
           description: Not Found
       deprecated: false
-  /technical/wma/**:
+  /technical/wma:
     get:
       tags:
         - price-controller
