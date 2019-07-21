@@ -12,11 +12,13 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-host: 'localhost:8956'
+host: metacortex.herokuapp.com
 basePath: /
 tags:
   - name: price-controller
     description: Price Controller
+schemes:
+  - https
 paths:
   /historic:
     get:
