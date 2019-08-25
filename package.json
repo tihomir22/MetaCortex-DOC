@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "redoc": "^2.0.0-rc.14"
+  },
+  "peerDependencies": {
   }
 }
